@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.Bros&.Bucks</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            height: 100%;
+            width: 100%;
+            /* box-sizing: border-box; */
+        }
+
+        .page1{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.950);
+            /* background: linear-gradient(white,black); */
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding-left: 80px;
+            border-bottom: 0.5px solid white;
+        }
+        
+
+        .page2{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.950);
+            /* background: linear-gradient(black,white); */
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding-left: 80px;
+            border-bottom: 0.5px solid white;
+        }
+
+        .page3{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.950);
+            /* background: linear-gradient(white,black); */
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding-left: 80px;
+            border-bottom: 0.5px solid white;
+        }
+
+        .headline{
+            grid-column: span 2;
+            height: 100px;
+            margin-top: 40px;
+            /* background-color: #505050; */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* justify-content: flex-start; */
+            font-size: 2rem;
+            color:aliceblue;
+        }
+        .headline p{
+            font-size: 20px;
+        }
+
+        .course{
+            background-color: rgba(255, 255, 255, 0.724);
+            width: 260px;
+            border-radius: 20px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            /* gap: 10px; */
+            z-index: 0;
+            transition-duration: 0.3s;
+        }
+        .course:hover{
+            box-shadow: rgba(250, 250, 250, 0.25) 0px 6px 12px -2px, rgba(245, 243, 243, 0.3) 0px 3px 7px -3px;
+            /* border:	1px solid rgba(0,0,0,0.03);
+            border-radius:	20px; */
+
+        }
+
+        .course button{
+            /* margin-top: 150px; */
+            height: 40px;
+            width: 200px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            transition-duration: 0.3s;
+            font-weight: bold;
+            background-color: #043927;
+            border: none;
+            border-radius: 5px;
+            color:aliceblue;
+        }
+        button:hover{
+            background-color: #18453B;
+            /* border: none;
+            border-radius: 5px;*/
+            color: rgb(255, 255, 255);
+        }
+        .mn button{
+            background-color: seagreen;
+            box-shadow: none;
+            margin-bottom: 13px;
+        }
+
+        .course img{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 150px;
+            width: 260px;
+        }
+
+        .course p{
+            color: rgb(8, 8, 8);
+            margin: 20px;
+            text-align: center;
+        }
+        .course h4{
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .a1{
+            grid-area: 3/1/8/2;
+        }
+
+        .a2{
+            grid-area: 3/2/8/3;
+        }
+
+        .a3{
+            grid-area: 3/3/8/4;
+        }
+
+        .a4{
+            grid-area: 3/4/8/5;
+        }
+
+        #card1{
+            
+        }
+
+        #card2{
+
+        }
+
+        #card3{
+            
+        }
+
+        #card4{
+            
+        }
+
+        #card5{
+            
+        }
+
+        #card6{
+            
+        }
+
+        #card7{
+            
+        }
+
+        #card8{
+            
+        }
+
+        #card9{
+            
+        }
+
+        #card10{
+            
+        }
+
+        #card11{
+            
+        }
+
+        #card12{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <!-- <img src="../assets/stocks.jpg" /> -->
+       <div class="headline"><h4>Coding</h4>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ex assumenda non explicabo, expedita architecto? </p>
+       </div>
+       <div class="course a1" id="card1">
+        <img src="../assets/data.jpg" />
+        <h4>Data Science</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <a href="https://www.udemy.com/courses/search/?src=ukw&q=data+science"><button>Enroll</button></a>
+       </div>
+       <div class="course a2" id="card2">
+        <img src="./scifi.webp" />
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+       </div>
+       <div class="course a3" id="card3">
+        <img src="./scifi.webp" />
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+       </div>
+       <div class="course a4" id="card4">
+        <img src="./scifi.webp" />
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+       </div>
+    </div>
+    <div class="page2">
+        <div class="headline"><h4>Social Ettiqutte</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus corporis ullam illum, voluptatum explicabo sed.</p>
+        </div>
+        <div class="course a1" id="card5">
+            <img src="./scifi.webp" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+        </div>
+        <div class="course a2" id="card6">
+            <img src="./scifi.webp" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+        </div>
+        <div class="course a3" id="card7">
+            <img src="./scifi.webp" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+        </div>
+        <div class="course a4" id="card8">
+            <img src="./scifi.webp" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+        </div>
+    </div>
+    <div class="page3">
+       <div class="headline"><h4>Stocks, SGB's & SIP's</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quo distinctio saepe voluptates, necessitatibus laboriosam!</p>
+       </div>
+       <div class="course a1" id="card9">
+        <img src="./scifi.webp" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+       </div>
+       <div class="course a2" id="card10">
+        <img src="./scifi.webp" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+       </div>
+       <div class="course a3" id="card11">
+        <img src="./scifi.webp" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+       </div>
+       <div class="course a4" id="card12">
+        <img src="./scifi.webp" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+        <div class="mn"><button>Add to Cart</button></div>
+        <button>Enroll</button>
+       </div>
+    </div>
+</body>
+</html>

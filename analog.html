@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>analog</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .spike{
+            position: absolute;
+            width: 8px;
+            height: 1px;
+            background: #fff9;
+            line-height: 20px;
+            transform-origin: 50%;
+            z-index: 5;
+            inset: 0;
+            margin: auto;
+            font-style: normal;
+            transform: rotate(var(--rotate)) translate(var(--dail-size));
+        }
+        .spike:nth-child(5n+1){
+            box-shadow: -7px 0 #fff9;
+        }
+    </style>
+</head>
+<body>
+    <div class="spike">
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+    </div>
+</body>
+</html>
